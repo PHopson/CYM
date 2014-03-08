@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CallYourMother</string>
+    <string name="action_settings">Settings</string>
+	<string name="gen_header">Choose a contact</string>
+	<string name="gen_start">Setup</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_phone_list">PhoneList</string>
+    
+
+</resources>
