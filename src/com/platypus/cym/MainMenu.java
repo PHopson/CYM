@@ -21,14 +21,13 @@ public class MainMenu extends Activity {
 		return true;
 	}
 	
-	public void startPhoneList(View view){
-		Intent phoneIntent = new Intent(this,PhoneList.class);
-		startActivity(phoneIntent);
+	public void startContList(View view){
+		Intent listIntent = new Intent(this,ContactListActivity.class);
+		startActivity(listIntent);
 	}
 	
 	public void startSettings(View view){
-		Intent settingIntent = new Intent(this, SettingsActivity.class);
-		startActivity(settingIntent);
+		
 	}
 
 }

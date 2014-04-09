@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gen_start" 
-		android:onClick="startPhoneList" />
+		android:onClick="startContList" />
 	
 	<Button
         android:layout_width="wrap_content"
