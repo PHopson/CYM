@@ -3,17 +3,11 @@ package com.platypus.cym;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
+
 
 public class ContactListActivity extends Activity implements
 		ActionBar.OnNavigationListener {
@@ -28,7 +22,7 @@ public class ContactListActivity extends Activity implements
 	//Keep 'filter' values in an array to pass to list Fragment
 	String[] mFilterStrings;
 	//look in the sky, its a bird, its a plane
-	//FragmentManager itsFragMan = getFragmentManager();
+	FragmentManager itsFragMan = getFragmentManager();
 	
 	
 	@Override
@@ -94,8 +88,8 @@ public class ContactListActivity extends Activity implements
 	public boolean onNavigationItemSelected(int position, long id) {
 		
 		//Tell the contact list fragment to update its view when a different 'filter' is chosen
-		//ContactListFrag cFrag = (ContactListFrag)itsFragMan.findFragmentById(R.id.contactListFrag);
-		//cFrag.updateList(mFilterStrings[position]);
+		ContactListFrag cFrag = (ContactListFrag)itsFragMan.findFragmentById(R.id.contactListFrag);
+		cFrag.updateList(mFilterStrings[position]);
 		
 		return true;
 	}
